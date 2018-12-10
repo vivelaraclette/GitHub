@@ -1,0 +1,32 @@
+//Test switch-case pour multiple if else
+let pingouin = prompt('Quel type de pingouin est tu ?');
+
+switch(pingouin) {
+  case 'Gros pingouin':
+    console.log('C\'est un gros pingouin bien fat');
+    break;
+  case 'Petit pingouin':
+    console.log('C\'est un tout petit pingouin');
+    break;
+  case 'Pingouin mutant':
+    console.log('ph\'nglui mglw\'nafh Cthulhu R\'lyeh wgah\'nagl fhtagn');
+    break;
+  default:
+    console.log('Ce n\'est pas un pingouin');
+    break;
+}
+
+//Test Ternary Operator
+let fruit = 'prout';
+
+fruit === 'pomme' ? console.log('alors c\'est bien une pomme non ?') : console.log('alors ce n\'est pas une pomme je crois...');
+
+//Logical Operator
+let mood = 'sleepy';
+let tirednessLevel = 9;
+if (mood === 'sleepy' && tirednessLevel > 8) {
+  console.log('time to sleep');
+} else if
+  (mood !== 'sleepy' || tirednessLevel ===5) {
+  console.log('not bed time yet');
+}
