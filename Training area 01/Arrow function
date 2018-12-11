@@ -7,3 +7,14 @@ const plantNeedsWater = (day) => {
     return false;
   }
 };
+
+//Exemple 2 
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+}
+//devient
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
