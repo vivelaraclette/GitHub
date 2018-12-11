@@ -1,0 +1,8 @@
+//premire utilisation d'une fonction
+function getReminder() {
+  console.log('Water the plants.');
+}
+function greetInSpanish() {
+  console.log('Buenas Tardes.');
+}
+greetInSpanish(); // execute la fonction en question
