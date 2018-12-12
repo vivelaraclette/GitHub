@@ -1,0 +1,25 @@
+//premire utilisation d'une fonction
+function getReminder() {
+  console.log('Water the plants.');
+}
+function greetInSpanish() {
+  console.log('Buenas Tardes.');
+}
+greetInSpanish(); // execute la fonction en question
+
+//Function with parameter
+function whatDay(day) {
+  console.log('Nous sommes le ' + day + ' aujourd\'hui !');
+}
+whatDay('Mardi');
+
+//Function with return
+const plantNeedsWater = function(day) {
+  if (day === 'Wednesday') {
+    return true 
+  } else {
+    return false
+  }
+}
+plantNeedsWater('Tuesday');
+console.log(plantNeedsWater('Tuesday'));

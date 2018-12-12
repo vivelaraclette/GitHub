@@ -1,0 +1,20 @@
+// se construit de la manière suivante : const/let function1 = () => {function body}
+
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+//Exemple 2 
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+}
+//devient
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
