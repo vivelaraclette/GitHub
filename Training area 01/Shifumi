@@ -1,11 +1,3 @@
-/*function getUserChoice(userInput) {
-  userInput = userInput.toLowerCase();
-  if(userInput==='pierre'||userInput==='feuille'||userInput==='ciseaux') {
-    return userInput
-  } else {
-    console.log('Mauvais choix !');
-  }
-}*/
 function getComputerChoice() {
 randomNumber=Math.floor(Math.random()*3);
   switch(randomNumber) {
@@ -19,7 +11,7 @@ randomNumber=Math.floor(Math.random()*3);
 }
 function determineWinner(userChoice,computerChoice) {
     userChoice = userChoice.toLowerCase();
-  if(userChoice !== 'pierre' && userChoice !== 'feuille' && userChoice !=='ciseaux' && userChoice !== 'bomb' {
+  if(userChoice !== 'pierre' && userChoice !== 'feuille' && userChoice !=='ciseaux' && userChoice !== 'bomb') {
     return 'Mauvais choix !';
   } else {
   if(userChoice === 'bomb') {
@@ -52,14 +44,10 @@ function determineWinner(userChoice,computerChoice) {
   }
  }
 const computerPlayer = getComputerChoice();
-/*console.log(computerPlayer);
-console.log(determineWinner('feuille',computerPlayer));*/
 function playGame(choice) {
-  // let userChoice = 'feuille';
   const computerChoice = getComputerChoice();
-  console.log(`${choice} vs ${computerChoice}`);
-determineWinner(choice,computerChoice)
-  console.log(determineWinner(choice,computerChoice));
+console.log(`${choice} vs ${computerChoice}`);
+determineWinner(choice,computerChoice);
+console.log(determineWinner(choice,computerChoice));
 }
 playGame('feuille');
-playGame('bomb');
